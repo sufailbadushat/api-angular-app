@@ -18,4 +18,7 @@ export class ApiService {
   fetchUserInfo=()=>{
     return this.http.get("https://reqres.in/api/users?page=1");
   }
+  fetchProduct=()=>{
+    return this.http.get("https://dummyjson.com/products");
+  }
 }
