@@ -21,4 +21,7 @@ export class ApiService {
   fetchProduct=()=>{
     return this.http.get("https://dummyjson.com/products");
   }
+  fetchToDo=()=>{
+    return this.http.get("https://dummyjson.com/todos");
+  }
 }

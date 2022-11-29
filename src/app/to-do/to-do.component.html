@@ -1,0 +1,25 @@
+
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">UserId</th>
+                    <th scope="col">Todo</th>
+                    <th scope="col">Completed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data.todos">
+                    <th>{{i.userId}}</th>
+                    <td>{{i.todo}}</td>
+                    <td>{{i.completed}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
