@@ -1,0 +1,33 @@
+
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-2">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-63 col-xl-3 col-xxl-3" *ngFor="let i of data.users">
+                    <div class="card" style="width: 18rem;">
+                        <img height="200px" src="{{i.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 style="height:50px;overflow-y:hidden;" class="card-title">{{i.firstName+' '+i.lastName}}</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">{{"age: "+i.age}}</li>
+                          <li class="list-group-item">{{"Maiden: "+i.maidenName}}</li>
+                          <li class="list-group-item">{{"Gender: "+i.gender}}</li>
+                          <li class="list-group-item">{{"Email: "+i.email}}</li>
+                          <li class="list-group-item">{{"Phone: "+i.phone}}</li>
+                          <li class="list-group-item">{{"Username: "+i.username}}</li>
+                          <li class="list-group-item">{{"Password: "+i.password}}</li>
+                          <li class="list-group-item">{{"Birth Date: "+i.birthDate}}</li>
+                          <li class="list-group-item">{{"BloodGroup: "+i.bloodGroup}}</li>
+                          <li class="list-group-item">{{"EyeColor: "+i.eyeColor}}</li>
+                          <li class="list-group-item">{{"address: "+i.address.address}}</li>
+                          <li class="list-group-item">{{"postalCode: "+i.address.postalCode}}</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

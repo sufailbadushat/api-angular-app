@@ -27,4 +27,7 @@ export class ApiService {
   fetchQuotes=()=>{
     return this.http.get("https://dummyjson.com/quotes");
   }
+  fetchUserData=()=>{
+    return this.http.get("https://dummyjson.com/users");
+  }
 }
