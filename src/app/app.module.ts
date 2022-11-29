@@ -11,6 +11,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToDoComponent } from './to-do/to-do.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 
 const myRoutes: Routes = [
@@ -37,6 +38,10 @@ const myRoutes: Routes = [
   {
     path:"todo",
     component:ToDoComponent
+  },
+  {
+    path:"quotes",
+    component:QuotesComponent
   }
 ]
 
@@ -48,7 +53,8 @@ const myRoutes: Routes = [
     UsPublicComponent,
     UserInfoComponent,
     ProductListComponent,
-    ToDoComponent
+    ToDoComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
