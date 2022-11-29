@@ -9,6 +9,10 @@ import { PassangerComponent } from './passanger/passanger.component';
 import { UsPublicComponent } from './us-public/us-public.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToDoComponent } from './to-do/to-do.component';
+import { QuotesComponent } from './quotes/quotes.component';
+import { UserDataComponent } from './user-data/user-data.component';
 
 
 const myRoutes: Routes = [
@@ -25,12 +29,24 @@ const myRoutes: Routes = [
     component: UsPublicComponent
   },
   {
-    path:"userInfo",
-    component:UserInfoComponent
+    path: "userInfo",
+    component: UserInfoComponent
   },
   {
-    path:"productList",
-    component:ProductListComponent
+    path: "productList",
+    component: ProductListComponent
+  },
+  {
+    path: "userData",
+    component: UserDataComponent
+  },
+  {
+    path: "todo",
+    component: ToDoComponent
+  },
+  {
+    path: "quotes",
+    component: QuotesComponent
   }
 ]
 
@@ -41,12 +57,16 @@ const myRoutes: Routes = [
     PassangerComponent,
     UsPublicComponent,
     UserInfoComponent,
-    ProductListComponent
+    ProductListComponent,
+    ToDoComponent,
+    QuotesComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
