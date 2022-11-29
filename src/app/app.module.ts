@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PassangerComponent } from './passanger/passanger.component';
 import { UsPublicComponent } from './us-public/us-public.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 const myRoutes: Routes = [
@@ -26,6 +27,10 @@ const myRoutes: Routes = [
   {
     path:"userInfo",
     component:UserInfoComponent
+  },
+  {
+    path:"productList",
+    component:ProductListComponent
   }
 ]
 
@@ -35,7 +40,8 @@ const myRoutes: Routes = [
     NavBarComponent,
     PassangerComponent,
     UsPublicComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
