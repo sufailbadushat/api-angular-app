@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PassangerComponent } from './passanger/passanger.component';
 import { UsPublicComponent } from './us-public/us-public.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 
 const myRoutes: Routes = [
@@ -21,6 +22,10 @@ const myRoutes: Routes = [
   {
     path: "usPublic",
     component: UsPublicComponent
+  },
+  {
+    path:"userInfo",
+    component:UserInfoComponent
   }
 ]
 
@@ -29,7 +34,8 @@ const myRoutes: Routes = [
     AppComponent,
     NavBarComponent,
     PassangerComponent,
-    UsPublicComponent
+    UsPublicComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
