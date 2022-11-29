@@ -9,6 +9,7 @@ import { PassangerComponent } from './passanger/passanger.component';
 import { UsPublicComponent } from './us-public/us-public.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const myRoutes: Routes = [
@@ -46,7 +47,8 @@ const myRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
